@@ -9,6 +9,7 @@ export class GlobalStateProvider {
     }
 
     dispatch(event) {
+        console.log(this.stores);
         this.stores.forEach((s) => s.dispatch(event));
     }
 }

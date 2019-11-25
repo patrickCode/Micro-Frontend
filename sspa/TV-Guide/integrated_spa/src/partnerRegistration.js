@@ -24,9 +24,9 @@ export async function registerPartner(
     console.log(`Could not load store of app ${name}.`, e);
   }
 
-  if (storeModule.storeInstance && globalEventDistributor) {
-    customProps.store = storeModule.storeInstance;
-    globalEventDistributor.registerStore(storeModule.storeInstance);
+  if (storeModule.store && globalStateProvider) {
+    customProps.store = storeModule.store;
+    globalStateProvider.registerStore(storeModule.store);
   }
   singleSpa.registerApplication(
     name,

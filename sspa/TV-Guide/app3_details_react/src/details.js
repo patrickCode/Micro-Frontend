@@ -6,9 +6,9 @@ export class Details extends React.Component {
     return (
       <div>
         <h1>Details</h1>
-        <span>Program Name: {this.props.program}</span>
-        <span>Released On: {this.props.releasedOn}</span>
-        <span>Director: {this.props.director}</span>
+        <span>Program Name: {this.props.program}</span><hr/>
+        <span>Released On: {this.props.releasedOn}</span><hr/>
+        <span>Director: {this.props.director}</span><hr/>
       </div>
     );
   }

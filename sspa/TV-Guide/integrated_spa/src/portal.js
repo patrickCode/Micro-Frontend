@@ -1,17 +1,38 @@
-import 'zone.js';
-import * as singleSpa from 'single-spa';
-import { GlobalStateProvider } from './globalStateProvider';
-import { registerPartner } from './partnerRegistration';
+import "zone.js";
+import * as singleSpa from "single-spa";
+import { GlobalStateProvider } from "./globalStateProvider";
+import { registerPartner } from "./partnerRegistration";
+
+const globalStateProvider = new GlobalStateProvider();
 
 async function init() {
-    const globalStateProvider = new GlobalStateProvider();
-    const loaders = [];
+  const loaders = [];
 
-    loaders.push(registerPartner('app3', '/app3', '/app3/entry.js', null, globalStateProvider));
+  loaders.push(
+    registerPartner(
+      "app3",
+      "/",
+      "/app3/entry.js",
+      "/app3/store.js",
+      globalStateProvider
+    )
+  );
 
-    await Promise.all(loaders);
+  await Promise.all(loaders);
 
-    singleSpa.start();
+  singleSpa.start();
 }
 
-init(); 
+init();
+
+setTimeout(() => {
+  const action = {
+    type: "PROGRAM_SELECTED",
+    selectedProgram: {
+      name: "Avengers",
+      releasedOn: "April 2019",
+      director: "The Russo Brothers"
+    }
+  };
+  globalStateProvider.dispatch(action);
+}, 5000);
