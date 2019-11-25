@@ -5,9 +5,13 @@ import { ProgramDetails } from "./details";
 export default class Root extends React.Component {
   render() {
     return (
-      <Provider store={this.state.store}>
-        <ProgramDetails></ProgramDetails>
-      </Provider>
+      <div>
+        <h1>Hello</h1>
+      </div>
+      // <Details></Details>
+      // <Provider store={this.state.store}>
+        
+      // </Provider>
     );
   }
 }

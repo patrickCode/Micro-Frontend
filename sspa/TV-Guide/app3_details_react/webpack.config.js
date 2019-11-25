@@ -2,8 +2,8 @@ const path = require('path');
 
 module.exports = {
     entry: {
-        singleSpaEntry: './src/entry.js',
-        store: './src/store.js'
+        singleSpaEntry: './src/entry.js'
+        //store: './src/store.js'
     },
 
     output: {

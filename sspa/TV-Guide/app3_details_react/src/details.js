@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-class Details extends React.Component {
+export class Details extends React.Component {
   render() {
     return (
       <div>

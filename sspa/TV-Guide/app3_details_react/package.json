@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Shows the details of a running program",
   "scripts": {
-    "watch:portal": "webpack-dev-server --port 9001",
+    "watch:portal": "webpack-dev-server --port 7003",
     "build:portal": "webpack -p --progress"
   },
   "devDependencies": {
