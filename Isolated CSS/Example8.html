@@ -1,0 +1,113 @@
+
+
+
+      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  color: #555;
+  font-size: 1.1em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container {
+  margin: 1em auto;
+  width: 100%;
+  max-width: 814px;
+  position: relative;
+}
+
+.container-2 {
+  /* uncomment this if you want to isolate the contents of the container */
+
+  opacity: .99;
+}
+
+.container-1 img {
+  max-width: 100%;
+  mix-blend-mode: luminosity;
+}
+
+.container-1 h1,
+.container-2 h1 {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  font-size: 5vw;
+  width: 100%;
+  text-transform: uppercase;
+  margin-top: 5em;
+  background-color: red;
+  padding: .5em .25em;
+  mix-blend-mode: difference;
+}
+
+.source {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  mix-blend-mode: overlay;
+}
+
+.container-4 {
+  border: 1px solid #aaa;
+  padding: 1em;
+  background-color: white;
+}
+
+.container-4 h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 7em;
+  font-weight: bold;
+  isolation: isolate;
+  letter-spacing: -5px;
+}
+
+.container-4 h1 span {
+  display: block;
+  color: deepPink;
+}
+
+.container-4 h1 span:last-child {
+  margin-top: -1em;
+  color: #1AD6AC;
+  mix-blend-mode: difference;
+}
+
+
+    </style>
+</head>
+<body>
+        <div class="container container-1">
+                <img src="http://tympanus.net/codrops-playground/assets/images/cssref/properties/mix-blend-mode/scene.jpg" alt="Nature scene.">
+                <h1>Breathe</h1>
+              </div>
+              <div class="container container-2">
+                <img src="http://tympanus.net/codrops-playground/assets/images/cssref/properties/mix-blend-mode/scene.jpg" alt="Nature scene.">
+                <h1>Breathe</h1>
+              </div>
+              <div class="container container-3">
+                <img src="http://tympanus.net/codrops-playground/assets/images/cssref/properties/mix-blend-mode/scene.jpg" alt="Nature scene.">
+                <img src="http://tympanus.net/codrops-playground/assets/images/cssref/properties/mix-blend-mode/bird.jpg" alt="Bird image." class="source">
+              </div>
+              <div class="container container-4">
+                <h1><span>Colorful</span><span>Ideas</span></h1>
+              </div>
+</body>
+</html>      

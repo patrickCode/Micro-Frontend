@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    .c1 { background-color: lime; }
+    .c2 { background-color: lime; }
+    .c22 {mix-blend-mode: multiply; }
+
+.c3 { background-color: red; width: 200px; opacity: .95; mix-blend-mode: difference; }
+
+    .cir1 { mix-blend-mode: screen; }
+
+
+    </style>
+</head>
+<body>
+    <body>
+            <div class="c1"> <img src="images.jpg" width="200" height="200"/></div>
+
+            <div class="c2"> <img src="images.jpg" width="200" height="200" class="c22"/></div>
+
+            <div class="c2"> <img src="images.jpg" width="200" height="200" class="c3"/></div>
+
+
+            
+
+            <svg>
+                    <circle cx="40" cy="40" r="40" fill="red"/>
+                    <circle cx="80" cy="40" r="40" fill="lime"/>
+                    <circle cx="60" cy="80" r="40" fill="blue"/>
+                  </svg>
+                  
+
+                  <svg>
+                        <circle cx="40" cy="40" r="40" fill="red" class="cir1"/>
+                        <circle cx="80" cy="40" r="40" fill="lime" class="cir1"/>
+                        <circle cx="60" cy="80" r="40" fill="blue" class="cir1"/>
+                      </svg>
+                      
+         
+           
+      </body>
+      
+</body>
+</html>

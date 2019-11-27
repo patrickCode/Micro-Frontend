@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<title>Example</title>
+<style>
+body {
+  font-family: sans-serif;
+  background-image: url('images.jpg');
+  background-size: cover;
+}
+h1 {
+  width: 200px;
+  padding: 10px;
+  float: left;
+  background-color: orange;
+  color: white;
+  mix-blend-mode: overlay;
+}
+.isolated {
+  isolation: isolate;
+}
+</style>
+
+<div>
+  <h1>Not Isolated</h1>
+</div>
+
+<div class="isolated">
+  <h1>Isolated</h1>
+</div>

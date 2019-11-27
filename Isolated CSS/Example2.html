@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #F5F5F5;
+            color: #555;
+            font-size: 1.1em;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        
+        .container {
+            margin: 40px auto;
+            max-width: 814px;
+        }
+        
+        .element {
+            width: 100%;
+            height: 0;
+            padding-top: 66%;
+        }
+        
+        .element-1 {
+            background-image: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/background-blend-mode/blend-mode-example.jpg);
+            background-color: #51B7D3;
+            background-blend-mode: luminosity;
+        }
+        
+        .element-2 {
+            background-image: -webkit-linear-gradient(left, #69B62F, #DE3375), url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/background-blend-mode/blend-mode-example.jpg);
+            background-image: linear-gradient(to right, #69B62F, #DE3375), url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/background-blend-mode/blend-mode-example.jpg);
+            background-blend-mode: overlay;
+        }
+        
+        .element-3 {
+            background-image: url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/background-blend-mode/blend-mode-example-texture.jpg), url(http://tympanus.net/codrops-playground/assets/images/cssref/properties/background-blend-mode/blend-mode-example.jpg);
+            background-color: olive;
+            background-blend-mode: hard-light;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="element element-1"></div>
+        <br>
+        <div class="element element-2"></div>
+        <br>
+        <div class="element element-3"></div>
+    </div>
+
+
+</body>
+
+</html>

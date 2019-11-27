@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title> 
+			CSS | isolation Property 
+		</title> 
+		<style> 
+			.container { 
+				text-align: center; 
+				background-color: green; 
+				width: 400px; 
+				margin: auto; 
+			} 
+		
+			.blend { 
+				width: 200px; 
+				height: 200px; 
+				mix-blend-mode: difference; 
+			} 
+		
+			.isolate_enable { 
+				isolation: isolate; 
+			} 
+		</style> 
+	</head> 
+	
+	<body> 
+		<div class="container"> 
+			
+			<h3>Image without isolation</h3> 
+			
+			<img class="blend" src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/blank.png"> 
+
+			<div class="isolate_enable"> 
+				<h3>Image with isolation</h3> 
+				<img class="blend" src= 
+"https://media.geeksforgeeks.org/wp-content/uploads/blank.png"> 
+			</div> 
+		</div> 
+	</body> 
+</html>					 

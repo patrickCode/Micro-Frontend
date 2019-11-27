@@ -3,10 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
-    "scripts": {
-        "decide": "npx mfserve --listen 3001 team-decide",
-        "inspire": "npx mfserve --listen 3002 team-inspire"
-    },
+    "scripts": {},
     "author": "",
     "license": "ISC",
     "dependencies": {
